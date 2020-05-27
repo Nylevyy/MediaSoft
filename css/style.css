@@ -64,7 +64,7 @@
     font-size: inherit;
     padding: 10px 15px 10px 35px;
     line-height: inherit;
-    background-image: url("img/search.svg");
+    background-image: url("../img/search.svg");
     background-repeat: no-repeat;
     background-position: center left 15px;
     background-size: 15px;
@@ -147,7 +147,7 @@
     display: block;
     width: 25px;
     height: 25px;
-    background-image: url("img/heart.svg");
+    background-image: url("../img/heart.svg");
     background-size: contain;
     cursor: pointer;
 }
