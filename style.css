@@ -1,0 +1,217 @@
+::-webkit-scrollbar { /* chrome based */
+    width: 0;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+* {
+    margin: 0;
+}
+.main {
+    margin: auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    background-color: #fff;
+    width: 425px;
+    height: 750px;
+    border: 5px solid #000000;
+    position: relative;
+    overflow: hidden;
+}
+.panel {
+    margin: 0;
+    padding: 10px 15px;
+    height: 70px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 35px;
+    background: #dddddd;
+    border: 1px solid #2d58dd;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.header-image {
+    height: 20px;
+    width: 20px;
+    background-color: #354331;
+    border-radius: 5px;
+    color: #dddddd;
+    padding: 5px;
+    margin-right: 30px;
+}
+.header-form {
+    display: flex;
+    flex: 85%;
+}
+.header-form-input:focus {
+    outline: none;
+    border-width: 2px;
+}
+.header-form-input {
+    border: 1px solid #354331;
+    border-radius: 35px;
+    flex: 100%;
+    font-size: inherit;
+    padding: 10px 15px 10px 35px;
+    line-height: inherit;
+    background-image: url("img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center left 15px;
+    background-size: 15px;
+}
+.header-span {
+    display: flex;
+}
+.content {
+    margin: 90px 0;
+    height: 570px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+.contact-list{
+    padding: 0;
+}
+.contact-list-item {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid #354331;
+}
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 80%;
+    padding: 10px 15px;
+}
+.contact-img {
+    flex: 0 15%;
+}
+.profile-img {
+    width: 75px;
+    height: 75px;
+    padding: 5px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 75%;
+    justify-content: space-evenly;
+    padding: 5px 0;
+}
+.contact-info-name {
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+    flex: 0 10%;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-self: stretch;
+}
+.close-button {
+    display: flex;
+    flex: 0;
+}
+.delete-button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.delete-button>img {
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+.favourites-wrapper {
+    display: flex;
+    flex: 0;
+    position: relative;
+}
+.favourites-label {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url("img/heart.svg");
+    background-size: contain;
+    cursor: pointer;
+}
+.favourites-input {
+    font-size: 35px;
+    line-height: 35px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contact-add-form {
+    padding: 20px;
+}
+.add-contact-label {
+    display: block;
+    width: 100%;
+    padding: 10px 0 0;
+}
+.add-contact-input {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+.set-favourite {
+    margin-top: 10px;
+}
+.set-favourite-checkbox {
+    transform: scale(2.0);
+    transform-origin: left;
+    margin-right: 15px;
+}
+.submit-section {
+    background-color: #2d58dd;
+    color: #ffffff;
+    display: flex;
+    align-content: stretch;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.submit-form {
+    display: flex;
+    flex: 100%;
+    height: auto;
+    margin: 0;
+    background-color: transparent;
+}
+.submit-button {
+    display: flex;
+    flex: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.submit-span {
+    margin: auto;
+    color: white;
+    font-weight: bold;
+}
+.hidden {
+    display: none;
+}
+
