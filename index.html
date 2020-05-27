@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>contactApp</title>
+</head>
+<body>
+    <main class="main">
+        <header class="header panel">
+            <div class="wrapper">
+                <img src="img/phone.svg" class="header-image" alt="phone">
+                <form class="header-form hidden" action="">
+                    <!--suppress HtmlFormInputWithoutLabel -->
+                    <input type="text" class="header-form-input">
+                </form>
+                <span class="header-span">Добавить контакт</span>
+            </div>
+        </header>
+        <section class="content">
+            <ul class="contact-list hidden">
+                <li class="contact-list-item">
+                    <div class="wrapper">
+                        <div class="contact">
+                            <div class="contact-img">
+                                <img src="img/people.svg" alt="profile-img" class="profile-img">
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-info-name">Name</span>
+                                <span class="contact-info-phone">Phone</span>
+                            </div>
+                        </div>
+                        <div class="contact-actions">
+                            <div class="contact-delete">
+                                <button class="delete-button">
+                                    <img src="img/close.svg" alt="close">
+                                </button>
+                            </div>
+                            <div class="favourites-wrapper">
+                                <form action="" class="favourites-form">
+                                        <input type="checkbox" class="favourites-input" name="favourite" id="favourite">
+                                        <label for="favourite" class="favourites-label"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <form action="#" class="contact-add-form">
+                <label class="add-contact-label" for="name">Имя</label>
+                <input type="text" class="add-contact-input" id="name" name="name" required>
+                <label class="add-contact-label" for="phone">Номер телефона</label>
+                <input type="tel" class="add-contact-input" id="phone" name="phone" required>
+                <div class="set-favourite">
+                    <input type="checkbox" class="set-favourite-checkbox" id="setFavourite" name="set favourite">
+                    <label for="setFavourite" class="set-favourite-label">В избранное</label>
+                </div>
+            </form>
+        </section>
+        <section class="submit-section panel">
+            <form action="" class="submit-form">
+                <button class="submit-button">
+                    <span class="submit-span">Добавить</span>
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
