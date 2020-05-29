@@ -17,6 +17,14 @@
     position: relative;
     overflow: hidden;
 }
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #ffffff;
+}
 .panel {
     margin: 0;
     padding: 10px 15px;
@@ -72,6 +80,12 @@
 .header-span {
     display: flex;
 }
+.return-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: 0;
+    cursor: pointer;
+}
 .content {
     margin: 90px 0;
     height: 570px;
@@ -111,6 +125,10 @@
 .contact-info-name {
     font-size: 1.3em;
     line-height: 1.3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 265px;
 }
 .contact-actions {
     display: flex;
@@ -150,6 +168,9 @@
     background-image: url("../img/heart.svg");
     background-size: contain;
     cursor: pointer;
+}
+.checked {
+    background-image: url("../img/heartChecked.svg");
 }
 .favourites-input {
     font-size: 35px;
@@ -214,4 +235,5 @@
 .hidden {
     display: none;
 }
+
 
